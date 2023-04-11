@@ -1,553 +1,560 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>건설사업정보시스템</title>
-    <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <div class="Wrap">
-      <header class="header">
-        <h1>
-          <a href="/"><img src="./img/logo.png" alt="logo" /></a>
-        </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>건설사업정보시스템</title>
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="Wrap">
+    <header class="header">
+      <h1>
+        <a href="/"><img src="./img/logo.png" alt="logo" /></a>
+      </h1>
+      <div class="inner">
+        <i class="xi-close"></i>
+        <nav class="gnb">
+          <ul class="header_menu">
+            <li>
+              <a href="#!">인허가</a>
+              <ul class="sub_menu">
+                <li><a href="#!">민원안내</a></li>
+                <li><a href="#!">나의민원</a></li>
+                <li><a href="#!">민원공개</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">정보마당</a>
+              <ul class="sub_menu">
+                <li><a href="#!">설계VE마당</a></li>
+                <li><a href="#!">건설공사사후평가</a></li>
+                <li><a href="#!">온라인턴키마당</a></li>
+                <li><a href="#!">건설공사 원가절감사례</a></li>
+                <li><a href="#!">건설기술정보</a></li>
+                <li><a href="#!">건설신기술정보</a></li>
+                <li><a href="#!">도로·하천 공사정보</a></li>
+                <li><a href="#!">정보공개</a></li>
+                <li><a href="#!">건설신기술ㆍ특허 플랫폼</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">정책ㆍ법령ㆍ통계</a>
+              <ul class="sub_menu">
+                <li><a href="#!">정책동향</a></li>
+                <li><a href="#!">국토교통동향</a></li>
+                <li><a href="#!">건설법령</a></li>
+                <li><a href="#!">건설사업정보현황</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">알림마당</a>
+              <ul class="sub_menu">
+                <li><a href="#!">공지사항</a></li>
+                <li><a href="#!">통합자료실</a></li>
+                <li><a href="#!">민원처리공개</a></li>
+                <li><a href="#!">허가내용공고</a></li>
+                <li><a href="#!">Q&A</a></li>
+                <li><a href="#!">FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">소개</a>
+              <ul class="sub_menu">
+                <li><a href="#!">건설사업정보화(CALS)</a></li>
+                <li><a href="#!">건설사업정보시스템</a></li>
+                <li><a href="#!">건설정보표준</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">지도정보</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header_etc">
+        <div class="search">
+          <input type="text" />
+          <i class="xi-search"></i>
+        </div>
+        <a href="#!"><i class="xi-help-o"></i></a>
+      </div>
+      <button class="m_open">
+        <i class="xi-bars"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="mainBanner">
         <div class="inner">
-          <nav class="gnb">
-            <ul class="header_menu">
-              <li>
-                <a href="#!">인허가</a>
-                <ul class="sub_menu">
-                  <li><a href="#!">민원안내</a></li>
-                  <li><a href="#!">나의민원</a></li>
-                  <li><a href="#!">민원공개</a></li>
+          <div class="slogan">
+            <img src="./img/main_txt.png" alt="" />
+          </div>
+          <div class="left">
+            <img src="./img/main_banner/ani1.gif" alt="" />
+            <img src="./img/main_banner/ani2.gif" alt="" />
+          </div>
+          <div class="right">
+            <img src="./img/main_banner/ani3.gif" alt="" />
+            <div class="login box">
+              <p>로그인</p>
+              <div class="login_area">
+                <input type="text" placeholder="아이디" />
+                <input type="password" placeholder="비밀번호" />
+                <button>로그인</button>
+              </div>
+              <div class="login_menu">
+                <div class="login_left">
+                  <input type="checkbox" name="chkID" id="chkID" />
+                  <span>아이디 저장</span>
+                </div>
+                <div class="login_right">
+                  <a href="#!">회원가입</a>
+                  <a href="#!">ID찾기</a>
+                  <a href="#!">PW찾기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mainMenu">
+        <div class="tab_container">
+          <div class="inner">
+            <ul class="tab">
+              <li class="action_btn on"><a href="#!">포털</a></li>
+              <li class="action_btn"><a href="#!">인허가</a></li>
+              <li class="action_btn"><a href="#!">사업관리</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu_container">
+          <div class="inner">
+            <div class="menuSlider">
+              <div class="menu_area">
+                <ul class="menu_list portal">
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/portal/icon_pub01.png" alt="" /></figure>
+                      <p>건설사업<br />정보현황</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/portal/icon_pub02.png" alt="" /></figure>
+                      <p>도로·하천<br />공사정보</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/portal/icon_pub03.png" alt="" /></figure>
+                      <p>설계VE<br />마당</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/portal/icon_pub04.png" alt="" /></figure>
+                      <p>건설공사<br />사후평가</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/portal/icon_pub05.png" alt="" /></figure>
+                      <p>건설신기술ㆍ특허<br />플랫폼</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/portal/icon_pub06.png" alt="" /></figure>
+                      <p>건설공사원가<br />절감사례</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/portal/icon_pub07.png" alt="" /></figure>
+                      <p>온라인<br />턴키마당</p>
+                    </a>
+                  </li>
                 </ul>
-              </li>
-              <li>
-                <a href="#!">정보마당</a>
-                <ul class="sub_menu">
-                  <li><a href="#!">설계VE마당</a></li>
-                  <li><a href="#!">건설공사사후평가</a></li>
-                  <li><a href="#!">온라인턴키마당</a></li>
-                  <li><a href="#!">건설공사 원가절감사례</a></li>
-                  <li><a href="#!">건설기술정보</a></li>
-                  <li><a href="#!">건설신기술정보</a></li>
-                  <li><a href="#!">도로·하천 공사정보</a></li>
-                  <li><a href="#!">정보공개</a></li>
-                  <li><a href="#!">건설신기술ㆍ특허 플랫폼</a></li>
+              </div>
+              <div class="menu_area">
+                <ul class="menu_list license">
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap01.png" alt="" /></figure>
+                      <p>도로분야민원</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap02.png" alt="" /></figure>
+                      <p>품질검사<br />성적서등록</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap03.png" alt="" /></figure>
+                      <p>실적증명민원</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap04.png" alt="" /></figure>
+                      <p>도로점용<br />종합안내</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap05.png" alt="" /></figure>
+                      <p>민원서식</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap06.png" alt="" /></figure>
+                      <p>민원처리현황</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap07.png" alt="" /></figure>
+                      <p>품질검사<br />성적서열람</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap08.png" alt="" /></figure>
+                      <p>민원작성사례</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap09.png" alt="" /></figure>
+                      <p>민원수수료납부</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap10.png" alt="" /></figure>
+                      <p>허가증발급</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap11.png" alt="" /></figure>
+                      <p>점용장소별<br />허가신청</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap12.png" alt="" /></figure>
+                      <p>발급문서확인</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap13.png" alt="" /></figure>
+                      <p>허가내용공고</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap14.png" alt="" /></figure>
+                      <p>도로점용<br />사업계획서제출</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/Licensing/icon_cap15.png" alt="" /></figure>
+                      <p>도로관리심의회</p>
+                    </a>
+                  </li>
                 </ul>
-              </li>
-              <li>
-                <a href="#!">정책ㆍ법령ㆍ통계</a>
-                <ul class="sub_menu">
-                  <li><a href="#!">정책동향</a></li>
-                  <li><a href="#!">국토교통동향</a></li>
-                  <li><a href="#!">건설법령</a></li>
-                  <li><a href="#!">건설사업정보현황</a></li>
+              </div>
+              <div class="menu_area">
+                <ul class="menu_list bm">
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts01.png" alt="" /></figure>
+                      <p>신규 용역ㆍ공사 신청</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts02.png" alt="" /></figure>
+                      <p>전자결재</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts03.png" alt="" /></figure>
+                      <p>보고현황</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts04.png" alt="" /></figure>
+                      <p>공사대장</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts05.png" alt="" /></figure>
+                      <p>공정보고</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts06.png" alt="" /></figure>
+                      <p>업무일지</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts07.png" alt="" /></figure>
+                      <p>건설사업관리보고</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts08.png" alt="" /></figure>
+                      <p>현장현황</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <figure><img src="./img/BM/icon_cts09.png" alt="" /></figure>
+                      <p>문서함</p>
+                    </a>
+                  </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+          <div class="btn_more">
+            <p class="more">더보기</p>
+            <p class="close">닫기</p>
+          </div>
+        </div>
+      </section>
+      <section class="mainInfo">
+        <div class="inner">
+          <section class="notice notice01 box">
+            <div class="notice_tab">
+              <a href="#!" class="tab on">공지사항</a>
+              <a href="#!" class="tab">국토교통동향</a>
+              <a href="#!" class="tab">정책동향</a>
+              <a href="#!" class="tab">자료실</a>
+              <a href="#!" class="more_btn"><i class="xi-plus"></i></a>
+            </div>
+            <div class="con_wrap">
+              <ul class="notice_con">
+                <li class="content on">
+                  <ul>
+                    <li><a href="#!">[공지] [안내] 차세대 전자문서유통 체계 전환 작업을 위한 문서유통 서비스</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[공지] [안내]허가증발급 정부24 연동장애로 인한 일시 중단 안내</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[공지] [점검] 시스템 점검 작업 안내</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[공지] [점검] 시스템 점검 작업 안내</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[공지] [점검] 시스템 점검 작업 안내</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[공지] [안내] 공간정보 오픈플랫폼 연동장애로 지도서비스 일시중단 안내</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+                <li class="content">
+                  <ul>
+                    <li><a href="#!">[동향] 김포·파주 한강터널, 발파 없이 TBM으로 안전하게 굴착 어쩌구 저쩌구</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[동향] [차관동정] 어명소 제2차관, “대설·한파 대비 교통안전 철저”</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[동향] 항공위성서비스(KASS) 정밀위치신호… 15일 첫 제공 어쩌구 저쩌구</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[동향] “미래 모빌리티”시대로 더 가까이 어쩌구 저쩌구</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[동향] 내년도 공간정보 국제표준 총회, 한국에서 열린다 어쩌구 저쩌구</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[동향] [장관동정] 원희룡 장관, “건설노조 불법행위 엄단하여, 진정한 어쩌구 저쩌구</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+                <li class="content">
+                  <ul>
+                    <li><a href="#!">[정책] 22년 제2회 수도권정비위원회 및 제3회 수도권정비실무위원회 회의</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[정책] 도로정책 브리프(2022년 11월호)</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[정책] 안전한 보행환경 조성을 위한 안심도로 공모전 우수사례</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[정책] 도로정책 브리프(2022년 10월호)</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[정책] 2022년도 교통안전연차보고서</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[정책] 도로정책 브리프(2022년 9월호)</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+                <li class="content">
+                  <ul>
+                    <li><a href="#!">[자료] WBS정보관리시스템 사용자 메뉴얼</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[자료] 지방국토관리청 건설사업의 작업분류체계(WBS) 적용 현황</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[자료] 21 건설사업정보시스템 운영 및 기능개선 최종보고서</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[자료] 건설신기술ㆍ특허 플랫폼 사용자 매뉴얼</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[자료] 2022년 도로점용 업무매뉴얼 및 도로점용 법령 및 사례 해설</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[자료] [알림] 『작업분류체계(WBS) 적용 설계실무 가이드라인(V1.4</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="notice notice02 box">
+            <div class="notice_tab">
+              <a href="#!" class="tab on">공사알리미</a>
+              <a href="#!" class="tab">민원처리공개</a>
+              <a href="#!" class="tab">허가내용공고</a>
+              <a href="#!" class="tab">특정공법공고</a>
+              <a href="#!" class="more_btn"><i class="xi-plus"></i></a>
+            </div>
+            <div class="con_wrap">
+              <ul class="notice_con">
+                <li class="content on">
+                  <ul>
+                    <li><a href="#!">고남~창기(제2공구) 도로건설공사</a><span>2022-12-16</span></li>
+                    <li><a href="#!">고남~창기(제1공구) 도로건설공사</a><span>2022-12-16</span></li>
+                    <li><a href="#!">나주 금천-화순 도암(2공구) 국가지원지방도 건설공사 실시설계용역</a><span>2022-12-16</span></li>
+                    <li><a href="#!">나주 금천-화순 도암(1공구) 국가지원지방도 건설공사 실시설계용역</a><span>2022-12-16</span></li>
+                    <li><a href="#!">장성 동화-서삼 국가지원지방도 건설공사 실시설계용역</a><span>2022-12-16</span></li>
+                    <li><a href="#!">천안시 국도대체우회도로(성거~목천 1공구) 건설사업관리(설계단계)</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+                <li class="content">
+                  <ul>
+                    <li><a href="#!">[광주] 도로점용 허가</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[진영] 도로점용 허가</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[서울] 도로점용 허가</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[진주] 도로점용 허가</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[영주] 도로점용 허가</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[예산] 도로점용 허가</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+                <li class="content">
+                  <ul>
+                    <li><a href="#!">[수원] 권리ㆍ의무의 승계신고</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[영주] 도로점용허가 변경</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[논산] 도로와 다른 시설의 연결허가 변경</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[충주] 도로와 다른 시설의 연결허가 변경</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[광주] 도로와 다른 시설의 연결허가 변경</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[포항] 도로와 다른 시설의 연결허가기간 연장</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+                <li class="content">
+                  <ul>
+                    <li><a href="#!">[광주]국도22호선 영광 법성IC육교 시설 (마감일: 22.12.16)</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[익산]해상교량 보수공사 제1권역 실시설계 (마감일: 22.12.16)</a><span>2022-12-16</span></li>
+                    <li><a href="#!">[논산]논산국토 도로구조물분야 보수공사 실시 (마감일: 22.12.15)</a><span>2022-12-16</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <div class="info_box01 box">
+            <a href="#!">
+              <img src="./img/icon_info.png" alt="" />
+              <span>건설 <strong>CALS</strong> 정보공개</span>
+            </a>
+          </div>
+          <div class="info-box02 box">
+            <ul>
+              <li class="half">
+                <a href="#!"><img src="./img/icon_desk1.png" alt="" />HELP DESK</a>
               </li>
-              <li>
-                <a href="#!">알림마당</a>
-                <ul class="sub_menu">
-                  <li><a href="#!">공지사항</a></li>
-                  <li><a href="#!">통합자료실</a></li>
-                  <li><a href="#!">민원처리공개</a></li>
-                  <li><a href="#!">허가내용공고</a></li>
-                  <li><a href="#!">Q&A</a></li>
-                  <li><a href="#!">FAQ</a></li>
-                </ul>
+              <li class="half">
+                <a href="#!"><img src="./img/icon_desk2.png" alt="" />FAQ</a>
               </li>
-              <li>
-                <a href="#!">소개</a>
-                <ul class="sub_menu">
-                  <li><a href="#!">건설사업정보화(CALS)</a></li>
-                  <li><a href="#!">건설사업정보시스템</a></li>
-                  <li><a href="#!">건설정보표준</a></li>
-                </ul>
+              <li class="all">
+                <a href="#!">사용자 매뉴얼<img src="./img/icon_down.png" alt="" /></a>
               </li>
-              <li>
-                <a href="#!">지도정보</a>
+              <li class="all">
+                <a href="#!">설치프로그램 다운로드<img src="./img/icon_down.png" alt="" /></a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div class="header_etc">
-          <div class="search">
-            <input type="text" />
-            <i class="xi-search"></i>
           </div>
-          <a href="#!"><i class="xi-help-o"></i></a>
+          <div class="go box">
+            <span>바로가기</span>
+            <ul>
+              <li>
+                <a href="#!"><img src="./img/icon_go01.png" alt="" />건설CALS빅데이터</a>
+              </li>
+              <li>
+                <a href="#!"><img src="./img/icon_go02.png" alt="" />공공용지관리(취득실적)</a>
+              </li>
+              <li>
+                <a href="#!"><img src="./img/icon_go03.png" alt="" />용지보상관리(위탁보상입력)</a>
+              </li>
+              <li>
+                <a href="#!"><img src="./img/icon_go04.png" alt="" />품질검사성적서 등록</a>
+              </li>
+            </ul>
+          </div>
+          <div class="report box">
+            <a href="#!"><img src="./img/icon_molit.png" alt="" />
+              <p>국토교통부 <span>부조리신고센터</span></p>
+              <i class="xi-long-arrow-right"></i>
+            </a>
+          </div>
         </div>
-      </header>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="linkSection">
+        <div class="inner">
+          <div class="left">
+            <ul>
+              <li><a href="#!">HOME</a></li>
+              <li>
+                <a href="#!"><strong>개인정보처리방침</strong></a>
+              </li>
+              <li><a href="#!">사이트이용안내</a></li>
+              <li><a href="#!">품질오류신고 및 확인</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <div>
+              <a href="#!" class="link_btn">관련기관 바로가기<i class="xi-navigation"></i></a>
+              <ul>
+                <li><a href="#!">국토교통부</a></li>
+                <li><a href="#!">과학기술정보통신부</a></li>
+                <li><a href="#!">한국기술뭐시기</a></li>
+                <li><a href="#!">국도교통과학뭐시기</a></li>
+              </ul>
+            </div>
+            <div>
+              <a href="#!" class="link_btn">유관시스템 바로가기<i class="xi-navigation"></i></a>
+              <ul>
+                <li><a href="#!">건설기술정보시스템</a></li>
+                <li><a href="#!">BIM라이브러리 플랫폼</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-info">
+        <div class="inner">
+          <div class="left">
+            <address>
+              <p>10223 경기도 고양시 일산서구 고양대로 283 / TEL: 031-910-0638(<a href="#!">더보기</a>) / FAX: 031-918-0595 / E-mail:
+                calspia@kict.re.kr</p>
+              <p>Copyright ⓒ Ministry of Land. Infrastructure and Transport All Rights reserved.</p>
+            </address>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <a href="#!"><img src="./img/bottom_logo01.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#!"><img src="./img/bottom_logo02.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
 
-      <main>
-        <section class="mainBanner">
-          <div class="inner">
-            <div class="slogan">
-              <img src="./img/main_txt.png" alt="" />
-            </div>
-            <div class="left">
-              <img src="./img/main_banner/ani1.gif" alt="" />
-              <img src="./img/main_banner/ani2.gif" alt="" />
-            </div>
-            <div class="right">
-              <img src="./img/main_banner/ani3.gif" alt="" />
-              <div class="login box">
-                <p>로그인</p>
-                <div class="login_area">
-                  <input type="text" placeholder="아이디" />
-                  <input type="password" placeholder="비밀번호" />
-                  <button>로그인</button>
-                </div>
-                <div class="login_menu">
-                  <div class="login_left">
-                    <input type="checkbox" name="chkID" id="chkID" />
-                    <span>아이디 저장</span>
-                  </div>
-                  <div class="login_right">
-                    <a href="#!">회원가입</a>
-                    <a href="#!">ID찾기</a>
-                    <a href="#!">PW찾기</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mainMenu">
-          <div class="tab_container">
-            <div class="inner">
-              <ul class="tab">
-                <li class="action_btn on"><a href="#!">포털</a></li>
-                <li class="action_btn"><a href="#!">인허가</a></li>
-                <li class="action_btn"><a href="#!">사업관리</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="menu_container">
-            <div class="inner">
-              <div class="menuSlider">
-                <div class="menu_area">
-                  <ul class="menu_list portal">
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/portal/icon_pub01.png" alt="" /></figure>
-                        <p>건설사업<br />정보현황</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/portal/icon_pub02.png" alt="" /></figure>
-                        <p>도로·하천<br />공사정보</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/portal/icon_pub03.png" alt="" /></figure>
-                        <p>설계VE<br />마당</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/portal/icon_pub04.png" alt="" /></figure>
-                        <p>건설공사<br />사후평가</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/portal/icon_pub05.png" alt="" /></figure>
-                        <p>건설신기술ㆍ특허<br />플랫폼</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/portal/icon_pub06.png" alt="" /></figure>
-                        <p>건설공사원가<br />절감사례</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/portal/icon_pub07.png" alt="" /></figure>
-                        <p>온라인<br />턴키마당</p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="menu_area">
-                  <ul class="menu_list license">
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap01.png" alt="" /></figure>
-                        <p>도로분야민원</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap02.png" alt="" /></figure>
-                        <p>품질검사<br />성적서등록</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap03.png" alt="" /></figure>
-                        <p>실적증명민원</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap04.png" alt="" /></figure>
-                        <p>도로점용<br />종합안내</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap05.png" alt="" /></figure>
-                        <p>민원서식</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap06.png" alt="" /></figure>
-                        <p>민원처리현황</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap07.png" alt="" /></figure>
-                        <p>품질검사<br />성적서열람</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap08.png" alt="" /></figure>
-                        <p>민원작성사례</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap09.png" alt="" /></figure>
-                        <p>민원수수료납부</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap10.png" alt="" /></figure>
-                        <p>허가증발급</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap11.png" alt="" /></figure>
-                        <p>점용장소별<br />허가신청</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap12.png" alt="" /></figure>
-                        <p>발급문서확인</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap13.png" alt="" /></figure>
-                        <p>허가내용공고</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap14.png" alt="" /></figure>
-                        <p>도로점용<br />사업계획서제출</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/Licensing/icon_cap15.png" alt="" /></figure>
-                        <p>도로관리심의회</p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="menu_area">
-                  <ul class="menu_list bm">
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts01.png" alt="" /></figure>
-                        <p>신규 용역ㆍ공사 신청</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts02.png" alt="" /></figure>
-                        <p>전자결재</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts03.png" alt="" /></figure>
-                        <p>보고현황</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts04.png" alt="" /></figure>
-                        <p>공사대장</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts05.png" alt="" /></figure>
-                        <p>공정보고</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts06.png" alt="" /></figure>
-                        <p>업무일지</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts07.png" alt="" /></figure>
-                        <p>건설사업관리보고</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts08.png" alt="" /></figure>
-                        <p>현장현황</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!">
-                        <figure><img src="./img/BM/icon_cts09.png" alt="" /></figure>
-                        <p>문서함</p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="btn_more">
-              <p class="more">더보기</p>
-              <p class="close">닫기</p>
-            </div>
-          </div>
-        </section>
-        <section class="mainInfo">
-          <div class="inner">
-            <section class="notice notice01 box">
-              <div class="notice_tab">
-                <a href="#!" class="tab on">공지사항</a>
-                <a href="#!" class="tab">국토교통동향</a>
-                <a href="#!" class="tab">정책동향</a>
-                <a href="#!" class="tab">자료실</a>
-                <a href="#!" class="more_btn"><i class="xi-plus"></i></a>
-              </div>
-              <div class="con_wrap">
-                <ul class="notice_con">
-                  <li class="content on">
-                    <ul>
-                      <li><a href="#!">[공지] [안내] 차세대 전자문서유통 체계 전환 작업을 위한 문서유통 서비스</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[공지] [안내]허가증발급 정부24 연동장애로 인한 일시 중단 안내</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[공지] [점검] 시스템 점검 작업 안내</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[공지] [점검] 시스템 점검 작업 안내</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[공지] [점검] 시스템 점검 작업 안내</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[공지] [안내] 공간정보 오픈플랫폼 연동장애로 지도서비스 일시중단 안내</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                  <li class="content">
-                    <ul>
-                      <li><a href="#!">[동향] 김포·파주 한강터널, 발파 없이 TBM으로 안전하게 굴착 어쩌구 저쩌구</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[동향] [차관동정] 어명소 제2차관, “대설·한파 대비 교통안전 철저”</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[동향] 항공위성서비스(KASS) 정밀위치신호… 15일 첫 제공 어쩌구 저쩌구</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[동향] “미래 모빌리티”시대로 더 가까이 어쩌구 저쩌구</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[동향] 내년도 공간정보 국제표준 총회, 한국에서 열린다 어쩌구 저쩌구</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[동향] [장관동정] 원희룡 장관, “건설노조 불법행위 엄단하여, 진정한 어쩌구 저쩌구</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                  <li class="content">
-                    <ul>
-                      <li><a href="#!">[정책] 22년 제2회 수도권정비위원회 및 제3회 수도권정비실무위원회 회의</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[정책] 도로정책 브리프(2022년 11월호)</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[정책] 안전한 보행환경 조성을 위한 안심도로 공모전 우수사례</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[정책] 도로정책 브리프(2022년 10월호)</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[정책] 2022년도 교통안전연차보고서</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[정책] 도로정책 브리프(2022년 9월호)</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                  <li class="content">
-                    <ul>
-                      <li><a href="#!">[자료] WBS정보관리시스템 사용자 메뉴얼</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[자료] 지방국토관리청 건설사업의 작업분류체계(WBS) 적용 현황</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[자료] 21 건설사업정보시스템 운영 및 기능개선 최종보고서</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[자료] 건설신기술ㆍ특허 플랫폼 사용자 매뉴얼</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[자료] 2022년 도로점용 업무매뉴얼 및 도로점용 법령 및 사례 해설</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[자료] [알림] 『작업분류체계(WBS) 적용 설계실무 가이드라인(V1.4</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <section class="notice notice02 box">
-              <div class="notice_tab">
-                <a href="#!" class="tab on">공사알리미</a>
-                <a href="#!" class="tab">민원처리공개</a>
-                <a href="#!" class="tab">허가내용공고</a>
-                <a href="#!" class="tab">특정공법공고</a>
-                <a href="#!" class="more_btn"><i class="xi-plus"></i></a>
-              </div>
-              <div class="con_wrap">
-                <ul class="notice_con">
-                  <li class="content on">
-                    <ul>
-                      <li><a href="#!">고남~창기(제2공구) 도로건설공사</a><span>2022-12-16</span></li>
-                      <li><a href="#!">고남~창기(제1공구) 도로건설공사</a><span>2022-12-16</span></li>
-                      <li><a href="#!">나주 금천-화순 도암(2공구) 국가지원지방도 건설공사 실시설계용역</a><span>2022-12-16</span></li>
-                      <li><a href="#!">나주 금천-화순 도암(1공구) 국가지원지방도 건설공사 실시설계용역</a><span>2022-12-16</span></li>
-                      <li><a href="#!">장성 동화-서삼 국가지원지방도 건설공사 실시설계용역</a><span>2022-12-16</span></li>
-                      <li><a href="#!">천안시 국도대체우회도로(성거~목천 1공구) 건설사업관리(설계단계)</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                  <li class="content">
-                    <ul>
-                      <li><a href="#!">[광주] 도로점용 허가</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[진영] 도로점용 허가</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[서울] 도로점용 허가</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[진주] 도로점용 허가</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[영주] 도로점용 허가</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[예산] 도로점용 허가</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                  <li class="content">
-                    <ul>
-                      <li><a href="#!">[수원] 권리ㆍ의무의 승계신고</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[영주] 도로점용허가 변경</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[논산] 도로와 다른 시설의 연결허가 변경</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[충주] 도로와 다른 시설의 연결허가 변경</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[광주] 도로와 다른 시설의 연결허가 변경</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[포항] 도로와 다른 시설의 연결허가기간 연장</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                  <li class="content">
-                    <ul>
-                      <li><a href="#!">[광주]국도22호선 영광 법성IC육교 시설 (마감일: 22.12.16)</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[익산]해상교량 보수공사 제1권역 실시설계 (마감일: 22.12.16)</a><span>2022-12-16</span></li>
-                      <li><a href="#!">[논산]논산국토 도로구조물분야 보수공사 실시 (마감일: 22.12.15)</a><span>2022-12-16</span></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <div class="info_box01 box">
-              <a href="#!">
-                <img src="./img/icon_info.png" alt="" />
-                <span>건설 <strong>CALS</strong> 정보공개</span>
-              </a>
-            </div>
-            <div class="info-box02 box">
-              <ul>
-                <li class="half">
-                  <a href="#!"><img src="./img/icon_desk1.png" alt="" />HELP DESK</a>
-                </li>
-                <li class="half">
-                  <a href="#!"><img src="./img/icon_desk2.png" alt="" />FAQ</a>
-                </li>
-                <li class="all">
-                  <a href="#!">사용자 매뉴얼<img src="./img/icon_down.png" alt="" /></a>
-                </li>
-                <li class="all">
-                  <a href="#!">설치프로그램 다운로드<img src="./img/icon_down.png" alt="" /></a>
-                </li>
-              </ul>
-            </div>
-            <div class="go box">
-              <span>바로가기</span>
-              <ul>
-                <li>
-                  <a href="#!"><img src="./img/icon_go01.png" alt="" />건설CALS빅데이터</a>
-                </li>
-                <li>
-                  <a href="#!"><img src="./img/icon_go02.png" alt="" />공공용지관리(취득실적)</a>
-                </li>
-                <li>
-                  <a href="#!"><img src="./img/icon_go03.png" alt="" />용지보상관리(위탁보상입력)</a>
-                </li>
-                <li>
-                  <a href="#!"><img src="./img/icon_go04.png" alt="" />품질검사성적서 등록</a>
-                </li>
-              </ul>
-            </div>
-            <div class="report box">
-              <a href="#!"
-                ><img src="./img/icon_molit.png" alt="" />
-                <p>국토교통부 <span>부조리신고센터</span></p>
-                <i class="xi-long-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <section class="linkSection">
-          <div class="inner">
-            <div class="left">
-              <ul>
-                <li><a href="#!">HOME</a></li>
-                <li>
-                  <a href="#!"><strong>개인정보처리방침</strong></a>
-                </li>
-                <li><a href="#!">사이트이용안내</a></li>
-                <li><a href="#!">품질오류신고 및 확인</a></li>
-              </ul>
-            </div>
-            <div class="right">
-              <div>
-                <a href="#!" class="link_btn">관련기관 바로가기<i class="xi-navigation"></i></a>
-                <ul>
-                  <li><a href="#!">국토교통부</a></li>
-                  <li><a href="#!">과학기술정보통신부</a></li>
-                  <li><a href="#!">한국기술뭐시기</a></li>
-                  <li><a href="#!">국도교통과학뭐시기</a></li>
-                </ul>
-              </div>
-              <div>
-                <a href="#!" class="link_btn">유관시스템 바로가기<i class="xi-navigation"></i></a>
-                <ul>
-                  <li><a href="#!">건설기술정보시스템</a></li>
-                  <li><a href="#!">BIM라이브러리 플랫폼</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="footer-info">
-          <div class="inner">
-            <div class="left">
-              <address>
-                <p>10223 경기도 고양시 일산서구 고양대로 283 / TEL: 031-910-0638(<a href="#!">더보기</a>) / FAX: 031-918-0595 / E-mail: calspia@kict.re.kr</p>
-                <p>Copyright ⓒ Ministry of Land. Infrastructure and Transport All Rights reserved.</p>
-              </address>
-            </div>
-            <div class="right">
-              <ul>
-                <li>
-                  <a href="#!"><img src="./img/bottom_logo01.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#!"><img src="./img/bottom_logo02.png" alt="" /></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </footer>
-    </div>
-  </body>
 </html>

@@ -26,4 +26,16 @@ $(function () {
   $('.link_btn').on('click', function () {
     $(this).toggleClass('on');
   });
+
+  $('.m_open').on('click', function () {
+    $('.header .inner').addClass('on');
+  });
+
+  $('.xi-close').on('click', function () {
+    $('.header .inner').removeClass('on');
+  });
+
+  $('.header_menu > li').on('click', function () {
+    $('.sub_menu', this).toggleClass('on');
+  });
 });
