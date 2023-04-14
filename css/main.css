@@ -837,6 +837,286 @@ a {
 /* 
 
 
+모바일
+
+
+
+*/
+
+@media (max-width: 768px) {
+  /* --- 헤더 --- */
+
+  .header h1 a img {
+    width: 200px;
+  }
+
+  /* 헤더 메뉴 */
+
+  .inner.on .xi-close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    font-size: 24px;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .header .gnb {
+    height: 100%;
+  }
+
+  .header .gnb .header_menu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header .gnb .header_menu > li {
+    position: relative;
+    flex: 0 1 auto;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 30px;
+  }
+
+  .header .gnb .header_menu > li:hover > a {
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  .header .gnb .header_menu > li ~ li::before {
+    display: none;
+  }
+
+  .header .gnb .header_menu > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .header .gnb .header_menu .sub_menu {
+    flex-direction: column;
+    position: relative;
+    border: none;
+    background: none;
+    visibility: visible;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .header .gnb .header_menu .sub_menu.on {
+    height: auto;
+  }
+
+  .header .gnb .header_menu .sub_menu li {
+    line-height: 2;
+    width: 100%;
+  }
+
+  .header .gnb .header_menu .sub_menu li ~ li::before {
+    display: none;
+  }
+
+  .header .gnb .header_menu .sub_menu li a {
+    padding: 5px 0;
+  }
+
+  .header .gnb .header_menu .sub_menu li a:hover {
+    color: inherit;
+  }
+
+  /* 헤더 etc */
+
+  .header .header_etc {
+    display: none;
+  }
+
+  /* --- 메인 --- */
+
+  /* 메인배너 */
+
+  .mainBanner .inner {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .mainBanner .inner .slogan {
+    display: none;
+  }
+
+  .mainBanner .left {
+    display: none;
+    font-size: 0;
+  }
+
+  .mainBanner .right {
+    display: block;
+  }
+
+  .mainBanner .right img {
+    display: none;
+  }
+
+  .mainBanner .right .login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mainBanner .right .login p {
+    margin: 0;
+  }
+
+  .mainBanner .right .login p::after {
+    display: none;
+  }
+
+  .mainBanner .right .login_area {
+    display: flex;
+    margin: 0;
+  }
+
+  .mainBanner .right .login_area input {
+    width: 100px;
+  }
+
+  .mainBanner .right .login_area button {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .mainBanner .right .login_menu {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  /* 메뉴 슬라이드 */
+
+  .mainMenu .menu_container .menu_area .menu_list {
+    gap: normal;
+  }
+
+  .mainMenu .menu_container .menu_area .menu_list li {
+    width: 20%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  /* 인포메이션 */
+
+  .mainInfo .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mainInfo .notice {
+    width: 80%;
+  }
+
+  .mainInfo .notice .notice_tab .tab {
+    flex: 1;
+    width: auto;
+  }
+
+  .mainInfo .notice .con_wrap {
+    padding: 0 10px;
+  }
+
+  .mainInfo .notice .notice_con {
+    height: 180px;
+  }
+
+  .mainInfo .info_box01 {
+    display: none;
+  }
+
+  .mainInfo .info-box02 {
+    display: none;
+  }
+
+  .mainInfo .go {
+    justify-content: space-between;
+    gap: normal;
+    width: 80%;
+  }
+
+  .mainInfo .go ul {
+    justify-content: space-around;
+  }
+
+  .mainInfo .go li ~ li::before {
+    display: none;
+  }
+
+  .mainInfo .go a {
+    font-size: 12px;
+  }
+
+  .mainInfo .go a img {
+    display: none;
+  }
+
+  .mainInfo .report {
+    display: none;
+  }
+
+  /* --- 푸터 --- */
+
+  .footer section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .linkSection {
+    border: none;
+  }
+
+  .linkSection .inner {
+    flex-direction: column;
+  }
+
+  .linkSection .left ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: normal;
+    font-size: 13px;
+  }
+
+  .linkSection .left li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .linkSection .left li ~ li::before {
+    display: none;
+  }
+
+  .linkSection .left a {
+    display: block;
+  }
+
+  .linkSection .right {
+    display: none;
+  }
+
+  .footer-info .inner {
+    padding: 10px 0 20px;
+    font-size: 12px;
+  }
+}
+/* 
+
+
 태블릿
 
 

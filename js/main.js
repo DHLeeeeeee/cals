@@ -3,6 +3,8 @@ $(function () {
     arrows: false,
     speed: 200,
     draggable: false,
+    swipe: false,
+    touchMove: false,
   });
 
   $('.action_btn').click(function () {
