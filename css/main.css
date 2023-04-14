@@ -21,6 +21,10 @@
   border: 1px solid #dcdcdc;
 }
 
+.m_br {
+  display: none;
+}
+
 a {
   display: block;
 }
@@ -861,9 +865,12 @@ a {
     width: auto;
   }
 
-  .box {
-    background: #fff;
-    border: 1px solid #dcdcdc;
+  .m_br {
+    display: block;
+  }
+
+  .slash {
+    display: none;
   }
 
   /* --- 헤더 --- */
@@ -890,7 +897,7 @@ a {
   .header .inner {
     position: absolute;
     top: 0;
-    right: -100%;
+    right: -300px;
     background: #fff;
     height: 100vh;
     border-left: 1px solid #ddd;
@@ -1047,175 +1054,14 @@ a {
 
   /* 메뉴 슬라이드 */
 
-  .mainMenu {
-    position: relative;
-    z-index: 99;
-  }
-
-  .mainMenu .tab_container {
-    background: #0f4c94;
-    margin: 0 0 200px 0;
-  }
-
-  .mainMenu .tab_container .tab {
-    display: flex;
-    color: #dcdcdc;
-  }
-
-  .mainMenu .tab_container .tab li {
-    position: relative;
-    flex: 1;
-    height: 40px;
-    text-align: center;
-  }
-
-  .mainMenu .tab_container .tab li.on {
-    color: #fff;
-    background: #2d71c4;
-  }
-
-  .mainMenu .tab_container .tab li::before {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    width: 1px;
-    height: 20px;
-    background: #757575;
-    content: '';
-  }
-
-  .mainMenu .tab_container .tab li:last-child:after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    width: 1px;
-    height: 20px;
-    background: #757575;
-    content: '';
-  }
-
-  .mainMenu .tab_container .tab a {
-    line-height: 40px;
-  }
-
-  .mainMenu .menu_container {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    height: 200px;
-    width: 100%;
-    background: #2d71c4;
-    overflow: hidden;
-    transition: 0.5s;
-  }
-
-  .mainMenu .menu_container.on {
-    height: 570px;
-    overflow: hidden;
-  }
-
   .mainMenu .menu_container .menu_area .menu_list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px;
-    font-size: 14px;
-    color: #fff;
-    line-height: 1.2;
+    gap: normal;
   }
 
   .mainMenu .menu_container .menu_area .menu_list li {
-    width: 130px;
+    width: 20%;
     height: 150px;
-  }
-
-  .mainMenu .menu_container .menu_area .menu_list a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .mainMenu .menu_container .menu_area .menu_list li:hover a {
-    transform: translate(0, -10%);
-  }
-
-  .mainMenu .menu_container .menu_area .menu_list figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 0 0 10px 0;
-  }
-
-  .mainMenu .menu_container .menu_area .menu_list figure img {
-    width: 50px;
-    height: 50px;
-    font-size: 0;
-  }
-
-  .mainMenu .menu_container .menu_area .menu_list.portal figure {
-    background: #1e99f0;
-  }
-  .mainMenu .menu_container .menu_area .menu_list.license figure {
-    background: #6b93ed;
-  }
-  .mainMenu .menu_container .menu_area .menu_list.bm figure {
-    background: #0fa3c0;
-  }
-
-  .mainMenu .btn_more {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 80px;
-    border-radius: 5px 5px 0 0;
-    background: #0f4c94;
-    font-size: 14px;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
-  }
-
-  .mainMenu .btn_more .more {
-    display: block;
-  }
-
-  .mainMenu .btn_more.on .more {
-    display: none;
-  }
-
-  .mainMenu .btn_more .close {
-    display: none;
-  }
-
-  .mainMenu .btn_more.on .close {
-    display: block;
-  }
-
-  .mainMenu .btn_more .more::before {
-    content: '+';
-    margin: 0 5px 0 0;
-    font-size: 16px;
-  }
-
-  .mainMenu .btn_more .close::before {
-    display: inline-block;
-    width: 10px;
-    height: 1px;
-    background: #fff;
-    content: '';
-    margin: 0 5px 5px 0;
+    margin-bottom: 20px;
   }
 
   /* 인포메이션 */
@@ -1255,7 +1101,7 @@ a {
 
   .mainInfo .go {
     justify-content: space-between;
-    gap: auto;
+    gap: normal;
     width: 80%;
   }
 
@@ -1286,111 +1132,42 @@ a {
     margin: 0 auto;
   }
 
+  .linkSection {
+    border: none;
+  }
+
   .linkSection .inner {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .linkSection .left ul {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: normal;
+    font-size: 13px;
+  }
+
+  .linkSection .left li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .linkSection .left li ~ li::before {
-    display: inline-block;
-    width: 1px;
-    height: 10px;
-    background: #dcdcdc;
-    transform: translate(-10px, 0);
-    content: '';
+    display: none;
   }
 
   .linkSection .left a {
-    display: inline-block;
-    padding: 10px 0;
-  }
-
-  .linkSection .left ul strong {
-    font-weight: 500;
-    color: #dc3545;
+    display: block;
   }
 
   .linkSection .right {
-    display: flex;
-    position: relative;
-  }
-
-  .linkSection .right .link_btn {
-    display: flex;
-    justify-content: space-between;
-    width: 180px;
-    padding: 10px;
-    border-left: 1px solid #dcdcdc;
-  }
-
-  .linkSection .right > div:last-child .link_btn {
-    border-right: 1px solid #dcdcdc;
-  }
-
-  .linkSection .right > div:last-child ul {
-    width: 180px;
-  }
-
-  .linkSection .right ul {
     display: none;
-    position: absolute;
-    top: 0;
-    transform: translate(0, -100%);
-    width: 181px;
-    background: #fff;
-    border: 1px solid #dcdcdc;
-    text-align: center;
-  }
-
-  .linkSection .right .link_btn.on + ul {
-    display: block;
-  }
-
-  .linkSection .right li {
-    position: relative;
-  }
-
-  .linkSection .right li ~ li::before {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 150px;
-    height: 1px;
-    background: #dcdcdc;
-    content: '';
-  }
-
-  .linkSection .right ul a {
-    padding: 5px;
   }
 
   .footer-info .inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+    padding: 10px 0 20px;
     font-size: 12px;
-  }
-
-  .footer-info .left p {
-    line-height: 20px;
-  }
-
-  .footer-info .left a {
-    display: inline-block;
-    color: blue;
-    margin: 0 2px;
-  }
-
-  .footer-info .right ul {
-    display: flex;
-    gap: 30px;
   }
 }
