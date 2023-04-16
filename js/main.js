@@ -46,7 +46,9 @@ $(function () {
     $('.header .inner').removeClass('on');
   });
 
-  $('.mainBanner .inner').on('click', function () {
-    $('.mainBanner .inner').removeClass('on');
+  $('.mainBanner .inner').click(function (e) {
+    if ($(e.target).hasClass('inner')) {
+      $('.mainBanner .inner').removeClass('on');
+    }
   });
 });
