@@ -40,4 +40,13 @@ $(function () {
   $('.header_menu > li').on('click', function () {
     $('.sub_menu', this).toggleClass('on');
   });
+
+  $('.m_login').on('click', function () {
+    $('.mainBanner .inner').addClass('on');
+    $('.header .inner').removeClass('on');
+  });
+
+  $('.mainBanner .inner').on('click', function () {
+    $('.mainBanner .inner').removeClass('on');
+  });
 });
