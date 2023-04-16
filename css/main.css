@@ -899,11 +899,11 @@ a {
   /* 헤더 메뉴 */
 
   .header .inner {
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
     right: -300px;
     background: #fff;
-    height: 100vh;
     border-left: 1px solid #ddd;
     z-index: 999;
     transition: 1s;
