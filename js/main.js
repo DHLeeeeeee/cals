@@ -10,7 +10,7 @@ $(function () {
   $('.action_btn').click(function () {
     var slideNo = $(this).index();
 
-    setTimeout($('.menuSlider').slick('slickGoTo', slideNo), 200);
+    $('.menuSlider').slick('slickGoTo', slideNo);
     $(this).addClass('on').siblings().removeClass('on');
   });
 
